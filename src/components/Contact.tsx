@@ -89,10 +89,10 @@ export default function Contact() {
                 </dt>
                 <dd>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:hello@easybank.com"
                     className="hover:text-zinc-500"
                   >
-                    hello@example.com
+                    hello@easybank.com
                   </a>
                 </dd>
               </div>
