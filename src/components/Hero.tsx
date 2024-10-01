@@ -6,16 +6,18 @@ export default function Hero() {
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
-                <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className="mt-10 text-4xl font-bold tracking-tight text-slate-700 sm:text-6xl">
                   Next generation digital banking
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more..
+                <p className="mt-6 text-lg leading-7 text-zinc-400">
+                  Take your financial life online. Your Easybank account will be
+                  a one-stop-shop for spending, saving, budgeting, investing,
+                  and much more.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-full bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+                    className="rounded-full bg-green-500 px-9 py-3 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
                   >
                     Sign Up Now
                   </a>
@@ -42,10 +44,14 @@ export default function Hero() {
                           <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
                             NotificationSetting.jsx
                           </div>
-                          <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                          <div className="border-r border-gray-600/10 px-4 py-2">
+                            App.jsx
+                          </div>
                         </div>
                       </div>
-                      <div className="px-6 pb-14 pt-6">{/* Your code example */}</div>
+                      <div className="px-6 pb-14 pt-6">
+                        {/* Your code example */}
+                      </div>
                     </div>
                   </div>
                   <div
@@ -60,5 +66,5 @@ export default function Hero() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }

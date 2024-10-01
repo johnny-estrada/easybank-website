@@ -1,42 +1,52 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Contact', href: '#' },
-  { name: 'Blog', href: '#' },
-  { name: 'Careers', href: '#' },
-]
+  { name: "About", href: "#" },
+  { name: "Contact", href: "#" },
+  { name: "Blog", href: "#" },
+  { name: "Careers", href: "#" },
+];
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8">
+      <nav
+        aria-label="Global"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
+      >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">easybank</span>
-            <img alt="" src="./logo.svg" className="h-5 w-auto lg:h-8" />
+            <img alt="" src="./logo.svg" className="h-5 w-auto lg:h-5" />
           </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-sm font-semibold leading-6 text-zinc-400 hover:text-zinc-500"
+            >
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden lg:flex flex-1 items-center justify-end gap-x-6">
-          <a href="#" className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900">
+          <a
+            href="#"
+            className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-zinc-400 hover:text-zinc-500"
+          >
             Log In
           </a>
           <a
             href="#"
-            className="rounded-full bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+            className="rounded-full bg-green-500 px-7 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
           >
             Sign Up
           </a>
@@ -52,7 +62,11 @@ export default function Example() {
           </button>
         </div>
       </nav>
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+        className="lg:hidden"
+      >
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center gap-x-6">
@@ -105,5 +119,5 @@ export default function Example() {
         </DialogPanel>
       </Dialog>
     </header>
-  )
+  );
 }
