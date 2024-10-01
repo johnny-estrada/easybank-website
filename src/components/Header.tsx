@@ -6,10 +6,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Button from "../components/Button";
 
 const navigation = [
-  { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "Careers", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+  { name: "Blog", href: "/blog" },
+  { name: "Careers", href: "/careers" },
 ];
 
 export default function Example() {
@@ -22,7 +23,7 @@ export default function Example() {
         className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-5 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">easybank</span>
             <img alt="" src="./logo.svg" className="h-5 w-auto lg:h-5" />
           </a>
@@ -40,12 +41,12 @@ export default function Example() {
         </div>
         <div className="hidden lg:flex flex-1 items-center justify-end gap-x-6">
           <a
-            href="#"
+            href="/login"
             className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-zinc-400 hover:text-zinc-500"
           >
             Log In
           </a>
-          <Button text={"Sign Up"} href={"#"} />
+          <Button text={"Sign Up"} href={"/signup"} />
         </div>
         <div className="flex lg:hidden">
           <button
@@ -75,7 +76,7 @@ export default function Example() {
               />
             </a>
             <a
-              href="#"
+              href="/signup"
               className="ml-auto rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sign Up
@@ -104,7 +105,7 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log In
