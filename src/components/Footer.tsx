@@ -1,11 +1,11 @@
 const navigation = {
   solutions: [
     { name: "About Us", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
   ],
   support: [
-    { name: "Careers", href: "/careers" },
+    { name: "Contact", href: "/contact" },
     { name: "Support", href: "#" },
   ],
   legal: [
