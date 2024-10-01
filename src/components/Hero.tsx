@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
-                <h1 className="mt-10 text-4xl tracking-tight text-slate-700 sm:text-6xl">
+                <h1 className="text-4xl tracking-tight text-slate-700 sm:text-6xl">
                   Next generation digital banking
                 </h1>
                 <p className="mt-6 text-lg leading-7 text-zinc-400">
