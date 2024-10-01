@@ -1,8 +1,5 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from "@heroicons/react/20/solid";
+import { ArrowPathIcon, LockClosedIcon } from "@heroicons/react/20/solid";
+import BudgetingIcon from "./BudgetingIcon";
 
 const features = [
   {
@@ -10,7 +7,7 @@ const features = [
     description:
       " Online Banking Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.",
     href: "#",
-    icon: CloudArrowUpIcon,
+    icon: BudgetingIcon,
   },
   {
     name: "Simple Budgeting",
@@ -37,13 +34,13 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-gray-100 py-24 sm:py-32">
+    <div className="relative z-0 bg-gray-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl tracking-tight text-slate-700 sm:text-4xl">
             Why choose Easybank?
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-7">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
           </p>
@@ -52,14 +49,14 @@ export default function Features() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-700">
                   <feature.icon
                     aria-hidden="true"
-                    className="h-5 w-5 flex-none text-indigo-600"
+                    className="h-5 w-5 flex-none"
                   />
                   {feature.name}
                 </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
               </div>

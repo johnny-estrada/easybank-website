@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Button from "../components/Button";
 
 const navigation = [
   { name: "About", href: "#" },
@@ -18,7 +19,7 @@ export default function Example() {
     <header className="bg-white">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-5 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -44,12 +45,7 @@ export default function Example() {
           >
             Log In
           </a>
-          <a
-            href="#"
-            className="rounded-full bg-green-500 px-7 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
-          >
-            Sign Up
-          </a>
+          <Button text={"Sign Up"} href={"#"} />
         </div>
         <div className="flex lg:hidden">
           <button
