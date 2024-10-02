@@ -20,7 +20,7 @@ export default function Hero() {
                 </p>
                 <div className="lg:block mt-10 flex justify-center items-center gap-x-6">
                   <a
-                    href="#"
+                    href="/signup"
                     className="rounded-full bg-gradient-to-r from-green-500 to-sky-400 px-9 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
                   >
                     Sign Up Now
