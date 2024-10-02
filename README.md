@@ -1,10 +1,5 @@
 # Easybank Website
 
-```sh
-npm create astro@latest -- --template basics
-```
-
-
 ![just-the-basics](./src/assets/images/desktop-preview.jpg)
 
 ## 🚀 Project Structure
