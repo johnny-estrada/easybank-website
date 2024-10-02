@@ -13,7 +13,7 @@ const navigation = [
   { name: "Careers", href: "/careers" },
 ];
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (

@@ -66,12 +66,12 @@ const posts = [
   // More posts...
 ];
 
-export default function Example() {
+export default function Blog() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
-          <h2 className="text-3xl tracking-tight text-slate-700 sm:text-4xl">
+          <h2 className="text-center lg:text-left text-3xl tracking-tight text-slate-700 sm:text-4xl">
             Latest Articles
           </h2>
         </div>

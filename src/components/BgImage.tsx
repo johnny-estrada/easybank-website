@@ -1,8 +1,6 @@
-import React from "react";
-
 const BgImage = () => {
   return (
-    <div className="absolute z-0 lg:-top-[260px] lg:-right-[450px]">
+    <div className="hidden lg:block absolute z-0 lg:-top-[260px] lg:-right-[450px]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"

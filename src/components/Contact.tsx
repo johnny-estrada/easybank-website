@@ -6,7 +6,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="relative isolate bg-white">
+    <div className="relative isolate bg-zinc-50">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -195,7 +195,7 @@ export default function Contact() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-full bg-gradient-to-r from-green-500 to-sky-400 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+                className="rounded-full bg-gradient-to-r from-green-500 to-sky-400 px-7 py-3 text-center text-sm font-semibold text-white shadow-sm hover:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
               >
                 Send message
               </button>

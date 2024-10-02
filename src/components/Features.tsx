@@ -37,10 +37,10 @@ export default function Features() {
     <div className="relative z-0 bg-gray-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="mt-2 text-3xl tracking-tight text-slate-700 sm:text-4xl">
+          <p className="text-center lg:text-left mt-2 text-3xl tracking-tight text-slate-700 sm:text-4xl">
             Why choose Easybank?
           </p>
-          <p className="mt-6 text-lg leading-7">
+          <p className="text-center lg:text-left mt-6 text-lg leading-7">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
           </p>
