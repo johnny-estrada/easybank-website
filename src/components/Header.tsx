@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">easybank</span>
-            <img alt="" src="./logo.svg" className="h-5 w-auto lg:h-5" />
+            <img alt="Easybank" src="./logo.svg" className="h-5 w-auto" />
           </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
