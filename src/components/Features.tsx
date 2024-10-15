@@ -1,34 +1,31 @@
-import { ArrowPathIcon, LockClosedIcon } from "@heroicons/react/20/solid";
-import BudgetingIcon from "./BudgetingIcon";
-
 const features = [
   {
     name: "Online Banking",
     description:
       " Online Banking Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.",
     href: "#",
-    icon: BudgetingIcon,
+    icon: "./icons/icon-online.svg",
   },
   {
     name: "Simple Budgeting",
     description:
       "See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.",
     href: "#",
-    icon: LockClosedIcon,
+    icon: "./icons/icon-budgeting.svg",
   },
   {
     name: "Fast Onboarding",
     description:
       "We don’t do branches. Open your account in minutes online and start taking control of your finances right away.",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: "./icons/icon-onboarding.svg",
   },
   {
     name: "Open API",
     description:
       "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: "./icons/icon-api.svg",
   },
 ];
 
@@ -50,10 +47,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-700">
-                  <feature.icon
-                    aria-hidden="true"
-                    className="h-5 w-5 flex-none"
-                  />
+                  <img src={feature.icon} alt="" />
                   {feature.name}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7">
