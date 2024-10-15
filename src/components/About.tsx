@@ -1,5 +1,3 @@
-"use client";
-
 const stats = [
   { label: "Transactions every 24 hours", value: "44 million" },
   { label: "Assets under holding", value: "$119 trillion" },
