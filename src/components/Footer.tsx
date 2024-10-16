@@ -86,7 +86,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="flex flex-col justify-center items-center lg:block space-y-8">
-            <img alt="easybank" src="./logo.svg" className="h-5" />
+            <a href="/">
+              <img alt="easybank" src="./logo-footer.svg" className="h-5" />
+            </a>
             <p className="text-sm text-center lg:text-left leading-6 text-gray-300">
               Take your financial life online. Your Easybank account will be a
               one-stop-shop for spending, saving, budgeting, investing, and much
@@ -97,7 +99,7 @@ export default function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
+                  className="text-white hover:text-green-500"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="h-6 w-6" />
@@ -116,7 +118,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-300 hover:text-green-500"
                       >
                         {item.name}
                       </a>
@@ -133,7 +135,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-300 hover:text-green-500"
                       >
                         {item.name}
                       </a>
@@ -152,7 +154,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-300 hover:text-green-500"
                       >
                         {item.name}
                       </a>
@@ -163,7 +165,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+        <div className="mt-16 border-t border-white/50 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400">
             &copy; 2024 easybank, Inc. All rights reserved.
           </p>
