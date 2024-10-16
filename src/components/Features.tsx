@@ -47,7 +47,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col items-center lg:items-start">
                 <dt className="flex flex-col items-center lg:items-start gap-x-3 text-center lg:text-left leading-7 text-slate-700 text-2xl">
-                  <img src={feature.icon} alt="" className="mb-4" />
+                  <img src={feature.icon} alt="" className="mb-8" />
                   {feature.name}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-center lg:text-left leading-7">
