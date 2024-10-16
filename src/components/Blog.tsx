@@ -1,74 +1,65 @@
 const posts = [
   {
     id: 1,
-    title: "Boost your conversion rate",
+    title: "Receive money in any currency with no fees",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "./src/assets/images/image-currency.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
-      name: "Michael Foster",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      name: "Claire Robinson",
     },
   },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 2,
+    title: "Treat yourself without worrying about money",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "./src/assets/images/image-restaurant.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
-      name: "Michael Foster",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      name: "Wilson Hutton",
     },
   },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 3,
+    title: "Take your Easybank card wherever you go",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "./src/assets/images/image-plane.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
       name: "Michael Foster",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 4,
+    title: "Our invite-only Beta accounts are now live!",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "./src/assets/images/image-confetti.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
-      name: "Michael Foster",
-      imageUrl:
-        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      name: "Peter Moss",
     },
   },
-  // More posts...
 ];
 
 export default function Blog() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-zinc-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="text-center lg:text-left text-3xl tracking-tight text-slate-700 sm:text-4xl">
@@ -79,20 +70,18 @@ export default function Blog() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-lg bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+              className="relative isolate flex flex-col justify-end overflow-hidden rounded-lg bg-white px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
             >
               <img
                 alt=""
                 src={post.imageUrl}
-                className="absolute inset-0 -z-10 h-full w-full object-cover"
+                className="absolute inset-0 -z-10 h-1/2 w-full object-cover"
               />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                <time dateTime={post.datetime} className="mr-8">
-                  {post.date}
-                </time>
+              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-400">
+                <p className="mr-8">
+                  By {post.author.name}
+                </p>
                 <div className="-ml-4 flex items-center gap-x-4">
                   <svg
                     viewBox="0 0 2 2"
@@ -100,22 +89,18 @@ export default function Blog() {
                   >
                     <circle r={1} cx={1} cy={1} />
                   </svg>
-                  <div className="flex gap-x-2.5">
-                    <img
-                      alt=""
-                      src={post.author.imageUrl}
-                      className="h-6 w-6 flex-none rounded-full bg-white/10"
-                    />
-                    {post.author.name}
-                  </div>
+                 
                 </div>
               </div>
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+              <h3 className="mt-3 text-lg leading-6 text-slate-700">
                 <a href={post.href}>
                   <span className="absolute inset-0" />
                   {post.title}
                 </a>
               </h3>
+              <p className="mt-3">
+                {post.description}
+              </p>
             </article>
           ))}
         </div>
