@@ -46,7 +46,7 @@ export default function Features() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col items-center lg:items-start">
-                <dt className="flex flex-col items-center lg:items-start gap-x-3 text-center lg:text-left font-semibold leading-7 text-slate-700">
+                <dt className="flex flex-col items-center lg:items-start gap-x-3 text-center lg:text-left leading-7 text-slate-700 text-2xl">
                   <img src={feature.icon} alt="" className="mb-4" />
                   {feature.name}
                 </dt>
