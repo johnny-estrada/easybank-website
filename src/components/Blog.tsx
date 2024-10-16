@@ -6,7 +6,7 @@ const posts = [
     description:
       "The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
     imageUrl:
-      "./src/assets/images/image-currency.jpg",
+      "./images/image-currency.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
@@ -20,7 +20,7 @@ const posts = [
     description:
       "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
     imageUrl:
-      "./src/assets/images/image-restaurant.jpg",
+      "./images/image-restaurant.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
@@ -34,7 +34,7 @@ const posts = [
     description:
       "We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …",
     imageUrl:
-      "./src/assets/images/image-plane.jpg",
+      "./images/image-plane.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
@@ -48,7 +48,7 @@ const posts = [
     description:
       "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...",
     imageUrl:
-      "./src/assets/images/image-confetti.jpg",
+      "./images/image-confetti.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     author: {
