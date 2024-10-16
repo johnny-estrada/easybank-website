@@ -45,12 +45,12 @@ export default function Features() {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
             {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-700">
-                  <img src={feature.icon} alt="" />
+              <div key={feature.name} className="flex flex-col items-center lg:items-start">
+                <dt className="flex flex-col items-center lg:items-start gap-x-3 text-center lg:text-left font-semibold leading-7 text-slate-700">
+                  <img src={feature.icon} alt="" className="mb-4" />
                   {feature.name}
                 </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7">
+                <dd className="mt-4 flex flex-auto flex-col text-center lg:text-left leading-7">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
               </div>
